@@ -140,6 +140,7 @@ function createInstanceContext (id, options = {}, data) {
  * @param {object} data
  */
 function createInstance (id, code, config, data) {
+  console.log(`### Weex Framework ### 创建应用 ${id}`)
   if (instanceTypeMap[id]) {
     return new Error(`The instance id "${id}" has already been used!`)
   }
